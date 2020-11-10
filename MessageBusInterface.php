@@ -23,6 +23,7 @@ interface MessageBusInterface
      *
      * @param object|Envelope  $message The message or the message pre-wrapped in an envelope
      * @param StampInterface[] $stamps
+     * @return Envelope
      */
-    public function dispatch($message, array $stamps = []): Envelope;
+    public function dispatch($message, array $stamps = []);
 }
